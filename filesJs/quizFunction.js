@@ -1,5 +1,8 @@
 let jsonData;
 
+let btnLogin = document.getElementById("btn-login");
+btnLogin.addEventListener("click", obtenerJson());
+
 function siguiente (direccion){
     window.location.href = direccion;
 }
