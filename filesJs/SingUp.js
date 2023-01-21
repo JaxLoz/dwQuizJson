@@ -1,5 +1,19 @@
 let registros = []
 
+let btnLogin = document.getElementById("btn-login");
+btnLogin.addEventListener("click", SubirPreguntasLocalStorage());
+
+function SubirPreguntasLocalStorage (){
+    fetch('/registros.json')
+  .then(response => response.json())
+  .then(jsonString => {
+   //localStorage.setItem("lsPreguntas",jsonString)
+    localStorage.setItem("registroPreguntas",JSON.stringify(jsonString))
+  })
+  
+  .catch(error => console.error(error))
+}
+
 function loadRegister (){
     
     if(localStorage.getItem("registroUser") == null){
