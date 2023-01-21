@@ -1,8 +1,5 @@
 let jsonData;
 
-let btnLogin = document.getElementById("btn-login");
-btnLogin.addEventListener("click", obtenerJson());
-
 function siguiente (direccion){
     window.location.href = direccion;
 }
@@ -11,19 +8,6 @@ function anterior (dirrecion){
     window.location.href = dirrecion;
 }
 
-function obtenerJson (){
-
-    
-fetch('/registros.json')
-  .then(response => response.json())
-  .then(jsonString => {
-   //localStorage.setItem("lsPreguntas",jsonString)
-    localStorage.setItem("registroPreguntas",JSON.stringify(jsonString))
-  })
-  
-  .catch(error => console.error(error))
-
-}
 
 function optenerObjetPreguntas (){
   let stringPreguntasDatos = localStorage.getItem("registroPreguntas");
