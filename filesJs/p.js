@@ -13,4 +13,6 @@ let array = [{
 
 
 
-console.log(array.findIndex(x => x.nombre == "mariana"))
+console.log(array.findIndex(x => x.nombre == "jorge"))
+array.splice(-1,1)
+console.log(array)

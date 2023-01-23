@@ -37,7 +37,11 @@ function obtenerInfoSesiones (){
         let registrosSesionesBack = localStorage.getItem("registroSesionesLC");
         registrosSesiones = JSON.parse(registrosSesionesBack);
         indexEmailRegistrado = registrosSesiones.findIndex(m => m.sEmail == emailSesion);
-        registrosSesiones.splice(indexEmailRegistrado,1);
+        
+        if (indexEmailRegistrado != -1){
+            registrosSesiones.splice(indexEmailRegistrado,1);
+        }
+        
         registrosSesiones.unshift(sesionInformation);
         let JSONregistroSesiones2 = JSON.stringify(registrosSesiones);
         localStorage.setItem("registroSesionesLC", JSONregistroSesiones2);
