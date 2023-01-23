@@ -1,35 +1,35 @@
 {
     "questions": [
       {
-        "question1": "¿Que usos tiene el LocalStorage?",
+        "question1": "1. ¿Que usos tiene el LocalStorage?",
         "opcion1": "Almacenar informacion en el servidor",
         "opcion2": "Optener el tamaño de almacenamiento",
         "opcion3": "Almacenar informacion del lado del cliente",
         "opcion4": "Ninguna de las anteriores"
       },
       {
-        "question2": "De que manera se puede optener la informacion de un archivo JSON en js",
+        "question2": "2. ¿De que manera se puede optener la informacion de un archivo JSON en js?",
         "opcion1": "funcion fetch()",
         "opcion2": "funcion $.ajax() de Jquery",
         "opcion3": "funcion $.getJSON() de Jquery",
         "opcion4": "todas las anteriores"
       },
       {
-        "question3": "¿Como se declara una variable en JavaScript?",
+        "question3": "3. ¿Como se declara una variable en JavaScript?",
         "opcion1": "int a = 10",
         "opcion2": "a = 10",
         "opcion3": "let a = 10",
         "opcion4": "Ninguna de las anteriores"
       },
       {
-        "question4": "Comando para inicializar un repositorio con git",
+        "question4": "4. ¿Comando para inicializar un repositorio con git?",
         "opcion1": "git init",
         "opcion2": "git start",
         "opcion3": "git repoStart",
         "opcion4": "git -i"
       },
       {
-        "question5": "Cual de estos es un ejemplo de pipeline en linux",
+        "question5": "5. ¿Cual de estos es un ejemplo de pipeline en linux?",
         "opcion1": "ls -pl grep '.txt'",
         "opcion2": "ls | grep '.txt'",
         "opcion3": "ls --pipeline .'txt'",

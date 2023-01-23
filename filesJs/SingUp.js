@@ -1,7 +1,6 @@
-let registros = []
-
+let registros = [];
 let btnLogin = document.getElementById("btn-login");
-btnLogin.addEventListener("click", SubirPreguntasLocalStorage());
+btnLogin.addEventListener("click", SubirPreguntasLocalStorage);
 
 function SubirPreguntasLocalStorage (){
     fetch('/registros.json')
