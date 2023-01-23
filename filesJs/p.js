@@ -1,18 +1,18 @@
 let array = [{
     nombre: "javier",
-    apellidO: "montes"},
+    edad: 212},
     {
         nombre: "jesu",
-        apellido: "montes"
+        edad: 18
     },
     {
         nombre: "mariana",
-        apellido: "montes"
+        edad: 17
     }
 ]
 
+let ordenado = array.sort(function(a,b){
+   return a.edad - b.edad;
+})
 
-
-console.log(array.findIndex(x => x.nombre == "jorge"))
-array.splice(-1,1)
-console.log(array)
+console.log(ordenado)
